@@ -1,71 +1,107 @@
-# 🌐 Personal Portfolio
+# FutureFS01 - Personal Portfolio Website 🌐
 
-Welcome to my personal portfolio website repository.
+A responsive and SEO-friendly personal portfolio website developed as part of the **Future Interns Full Stack Web Development Internship**.
 
-This portfolio showcases my education, technical skills, projects, and web development journey as a Computer Science & Engineering student.
+This project showcases my profile, technical skills, education, projects, and provides professional contact options.
 
-## 👩 About Me
+---
 
-I am a Computer Science & Engineering student at Mangalore Institute of Technology & Engineering (MITE). I am passionate about web development, programming, and continuously learning new technologies to build responsive and user-friendly applications.
+## 📌 Project Description
 
-## 🚀 Features
+The Personal Portfolio Website is designed to create an online presence and highlight my journey as a Computer Science & Engineering student.
 
-- Responsive Portfolio Website
-- Professional Hero Section
-- About Me Section
-- Skills Section
-- Projects Section
-- Education Section
-- GitHub & LinkedIn Links
-- Resume Download Button
-- Modern User Interface
+The website includes interactive sections, project showcases, resume download functionality, and links to professional profiles.
 
-## 🛠 Technologies Used
+---
+
+## ✨ Key Features
+
+- ✅ Interactive resume and portfolio sections
+- ✅ Responsive design for different devices
+- ✅ About, Skills, Projects, and Education sections
+- ✅ Resume download option
+- ✅ GitHub and LinkedIn profile integration
+- ✅ Email contact option
+- ✅ SEO-friendly HTML structure
+- ✅ Clean and user-friendly interface
+
+---
+
+## 🛠️ Technologies Used
 
 - HTML5
 - CSS3
 - JavaScript
+- Font Awesome
+- Google Fonts
+
+---
 
 ## 📂 Project Structure
 
 ```
-FutureFS01/
-│── index.html
-│── style.css
-│── script.js
-│── README.md
+FutureFS01
 │
-└── assets/
-    ├── avatar.png
-    └── resume.pdf
+├── index.html
+├── style.css
+├── script.js
+│
+├── assets
+│   ├── avatar.png
+│   └── resume.pdf
+│
+└── README.md
 ```
 
-## 📚 Projects Included
+---
 
-- Personal Portfolio Website
-- Calculator
-- Student Grading System
+## 🚀 How to Run
 
-## 🎓 Education
+1. Clone this repository:
 
-**Bachelor of Engineering (B.E.)**
+```bash
+git clone <repository-link>
+```
 
-Computer Science & Engineering
+2. Open the project folder.
 
-Mangalore Institute of Technology & Engineering (MITE)
+3. Open `index.html` in any web browser.
 
-**CGPA:** 9.36
+No additional setup is required.
 
-## 🔗 Connect With Me
+---
 
-- **GitHub:** https://github.com/saheema919-svg
-- **LinkedIn:** https://linkedin.com/in/saheema-saheema-00431a3aa
+## 📸 Project Preview
 
-## 📄 Live Website
 https://saheema919-svg.github.io/FUTURE_FS_01/
+---
 
-## © Author
+## 📬 Contact
 
 **Saheema**
 
+GitHub:  
+https://github.com/saheema919-svg
+
+LinkedIn:  
+https://linkedin.com/in/saheema-saheema-00431a3aa
+
+Email:  
+saheema919@gmail.com
+
+---
+
+## 🌱 Future Improvements
+
+- Add backend functionality
+- Add database integration
+- Implement working email notification form
+- Add more projects and achievements
+- Improve animations and interactions
+
+---
+
+## 👩‍💻 Author
+
+**Saheema**  
 Computer Science & Engineering Student
