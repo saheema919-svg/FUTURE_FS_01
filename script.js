@@ -1,56 +1,22 @@
-// Welcome Message
+// ===============================
+// Portfolio JavaScript
+// ===============================
 
-console.log("Welcome to Saheema's Portfolio");
-
-// =========================
-// Contact Form Validation
-// =========================
-
-const form = document.querySelector("form");
-
-form.addEventListener("submit", function(event){
-
-    event.preventDefault();
-
-    const name = document.querySelector('input[type="text"]').value.trim();
-
-    const email = document.querySelector('input[type="email"]').value.trim();
-
-    const message = document.querySelector("textarea").value.trim();
-
-    if(name === "" || email === "" || message === "")
-    {
-        alert("Please fill all the fields.");
-        return;
-    }
-
-    alert("Thank you for contacting me! I will get back to you soon.");
-
-    form.reset();
-
-});
-
-
-// =========================
-// Highlight Active Navigation
-// =========================
+// ---------- Active Navigation ----------
 
 const sections = document.querySelectorAll("section");
-
 const navLinks = document.querySelectorAll(".nav-links a");
 
 window.addEventListener("scroll", () => {
 
-    let current = "";
+    let currentSection = "";
 
     sections.forEach(section => {
 
-        const sectionTop = section.offsetTop - 100;
+        const sectionTop = section.offsetTop - 120;
 
-        if(window.scrollY >= sectionTop){
-
-            current = section.getAttribute("id");
-
+        if (window.scrollY >= sectionTop) {
+            currentSection = section.getAttribute("id");
         }
 
     });
@@ -59,10 +25,8 @@ window.addEventListener("scroll", () => {
 
         link.classList.remove("active");
 
-        if(link.getAttribute("href") === "#" + current){
-
+        if (link.getAttribute("href") === "#" + currentSection) {
             link.classList.add("active");
-
         }
 
     });
@@ -70,65 +34,94 @@ window.addEventListener("scroll", () => {
 });
 
 
-// =========================
-// Scroll Animation
-// =========================
+// ---------- Reveal Animation ----------
 
-const cards = document.querySelectorAll(".project-card,.skill,.education-box");
+const cards = document.querySelectorAll(
+    ".about-container, .skill-card, .project-card, .education-card"
+);
 
-const observer = new IntersectionObserver(entries => {
+const observer = new IntersectionObserver((entries) => {
 
     entries.forEach(entry => {
 
-        if(entry.isIntersecting){
+        if (entry.isIntersecting) {
 
             entry.target.style.opacity = "1";
-
             entry.target.style.transform = "translateY(0px)";
 
         }
 
     });
 
+}, {
+    threshold: 0.2
 });
 
-cards.forEach(card=>{
+cards.forEach(card => {
 
-    card.style.opacity="0";
-
-    card.style.transform="translateY(40px)";
-
-    card.style.transition="0.6s";
+    card.style.opacity = "0";
+    card.style.transform = "translateY(40px)";
+    card.style.transition = "all 0.6s ease";
 
     observer.observe(card);
 
 });
 
 
-// =========================
-// Hero Text Typing Effect
-// =========================
+// ---------- Hero Typing Effect ----------
 
 const title = document.querySelector(".hero h2");
 
-const text = "Computer Science Engineering Student";
+const text = "Computer Science & Engineering Student";
 
 let index = 0;
 
 title.textContent = "";
 
-function typing(){
+function typeText() {
 
-    if(index < text.length){
+    if (index < text.length) {
 
         title.textContent += text.charAt(index);
 
         index++;
 
-        setTimeout(typing,70);
+        setTimeout(typeText, 60);
 
     }
 
 }
 
-typing();
+window.onload = () => {
+
+    typeText();
+
+};
+
+
+// ---------- Smooth Scroll ----------
+
+navLinks.forEach(link => {
+
+    link.addEventListener("click", function (e) {
+
+        e.preventDefault();
+
+        const target = document.querySelector(
+            this.getAttribute("href")
+        );
+
+        target.scrollIntoView({
+
+            behavior: "smooth"
+
+        });
+
+    });
+
+});
+
+
+// ---------- Console Message ----------
+
+console.log("Welcome to Saheema's Portfolio!");
