@@ -768,5 +768,13 @@ footer p{
         align-items:center;
 
     }
+}
+   .nav-links a.active{
+
+    color:#2563eb;
+
+    font-weight:600;
 
 }
+
+
