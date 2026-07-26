@@ -69,13 +69,6 @@ git clone <repository-link>
 
 No additional setup is required.
 
----
-
-## 📸 Project Preview
-
-https://saheema919-svg.github.io/FUTURE_FS_01/
----
-
 ## 📬 Contact
 
 **Saheema**
