@@ -7,116 +7,211 @@
     <title>Saheema | Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- ================= NAVIGATION ================= -->
 
     <header>
+
         <nav class="navbar">
-            <div class="logo">Saheema</div>
+
+            <div class="logo">
+                Saheema
+            </div>
 
             <ul class="nav-links">
+
                 <li><a href="#home">Home</a></li>
+
                 <li><a href="#about">About</a></li>
+
                 <li><a href="#skills">Skills</a></li>
+
                 <li><a href="#projects">Projects</a></li>
+
                 <li><a href="#education">Education</a></li>
+
                 <li><a href="#contact">Contact</a></li>
+
             </ul>
+
         </nav>
+
     </header>
 
-    <!-- Home Section -->
+    <!-- ================= HERO ================= -->
 
     <section id="home" class="hero">
 
-        <div class="hero-content">
+        <div class="hero-text">
 
-            <h1>Hello, I'm <span>Saheema</span></h1>
-
-            <h2>Computer Science Engineering Student</h2>
-
-            <p>
-                Passionate about Web Development, Programming,
-                and building responsive websites.
+            <p class="welcome">
+                Hello, I'm
             </p>
 
-            <a href="#" class="btn">
-                Download Resume
-            </a>
+            <h1>
+                Saheema
+            </h1>
 
-            <a href="#contact" class="btn">
-                Contact Me
-            </a>
+            <h2>
+                Computer Science & Engineering Student
+            </h2>
+
+            <p class="hero-description">
+
+                Passionate about web development and continuously improving my
+                programming skills through projects and practical learning.
+                Currently pursuing a Full Stack Web Development Internship
+                at Future Interns.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#" class="btn primary-btn">
+                    <i class="fa-solid fa-file-arrow-down"></i>
+                    Download Resume
+                </a>
+
+                <a href="#projects" class="btn secondary-btn">
+                    View Projects
+                </a>
+
+            </div>
+
+            <div class="social-icons">
+
+                <a href="https://github.com/saheema919-svg" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <a href="https://linkedin.com/in/saheema-saheema-00431a3aa"
+                    target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img src="https://cdn-icons-png.flaticon.com/512/6997/6997662.png"
+                alt="Developer Avatar">
 
         </div>
 
     </section>
 
-    <!-- About Section -->
+    <!-- ================= ABOUT ================= -->
 
     <section id="about">
 
-        <h2>About Me</h2>
+        <h2 class="section-title">
+            About Me
+        </h2>
 
-        <p>
+        <div class="about-container">
 
-            I am a Computer Science Engineering student with
-            a strong interest in Full Stack Web Development.
-            I enjoy learning new technologies, solving
-            programming problems, and creating responsive
-            websites. I am currently doing a Full Stack Web
-            Development Internship at Future Interns to gain
-            practical industry experience.
+            <p>
 
-        </p>
+                I am a Computer Science & Engineering student at
+                Mangalore Institute of Technology & Engineering (MITE),
+                passionate about building responsive and user-friendly web
+                applications. I enjoy learning new technologies,
+                solving programming problems, and developing practical
+                projects that strengthen my technical skills.
 
-    </section>
-
-    <!-- Skills Section -->
-
-    <section id="skills">
-
-        <h2>Skills</h2>
-
-        <div class="skill-box">
-
-            <div class="skill">HTML</div>
-
-            <div class="skill">CSS</div>
-
-            <div class="skill">JavaScript</div>
-
-            <div class="skill">Java</div>
-
-            <div class="skill">Python</div>
-
-            <div class="skill">C</div>
-
-            <div class="skill">Git & GitHub</div>
+            </p>
 
         </div>
 
     </section>
 
-    <!-- Projects Section -->
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills">
+
+        <h2 class="section-title">
+            Skills
+        </h2>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                HTML
+            </div>
+
+            <div class="skill-card">
+                CSS
+            </div>
+
+            <div class="skill-card">
+                JavaScript
+            </div>
+
+            <div class="skill-card">
+                Java
+            </div>
+
+            <div class="skill-card">
+                Python
+            </div>
+
+            <div class="skill-card">
+                C
+            </div>
+
+            <div class="skill-card">
+                Git
+            </div>
+
+            <div class="skill-card">
+                GitHub
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
 
     <section id="projects">
 
-        <h2>Projects</h2>
+        <h2 class="section-title">
+            Projects
+        </h2>
 
-        <div class="project-container">
+        <div class="projects-grid">
 
             <div class="project-card">
 
                 <h3>Portfolio Website</h3>
 
                 <p>
-                    Personal portfolio website built using
+
+                    A personal portfolio website developed using
                     HTML, CSS and JavaScript.
+
                 </p>
+
+                <a href="https://github.com/saheema919-svg" target="_blank"
+                    class="project-btn">
+
+                    View on GitHub
+
+                </a>
 
             </div>
 
@@ -125,9 +220,19 @@
                 <h3>Calculator</h3>
 
                 <p>
-                    Responsive calculator using HTML, CSS
-                    and JavaScript.
+
+                    A responsive calculator application built using
+                    HTML, CSS and JavaScript.
+
                 </p>
+
+                <a href="https://github.com/saheema919-svg"
+                    target="_blank"
+                    class="project-btn">
+
+                    View on GitHub
+
+                </a>
 
             </div>
 
@@ -136,9 +241,19 @@
                 <h3>Student Grading System</h3>
 
                 <p>
-                    Java project to calculate grades and
-                    student performance.
+
+                    Java application to calculate grades
+                    and evaluate student performance.
+
                 </p>
+
+                <a href="https://github.com/saheema919-svg"
+                    target="_blank"
+                    class="project-btn">
+
+                    View on GitHub
+
+                </a>
 
             </div>
 
@@ -146,66 +261,89 @@
 
     </section>
 
-    <!-- Education Section -->
+    <!-- ================= EDUCATION ================= -->
 
     <section id="education">
 
-        <h2>Education</h2>
+        <h2 class="section-title">
 
-        <div class="education-box">
+            Education
 
-            <h3>B.E. Computer Science Engineering</h3>
+        </h2>
 
-            <p>MITE, Moodabidri</p>
+        <div class="education-card">
 
-            <p>CGPA : 9.36</p>
+            <h3>
+                Bachelor of Engineering
+            </h3>
 
-            <p>Expected Graduation : 2028</p>
+            <h4>
+                Computer Science & Engineering
+            </h4>
+
+            <p>
+                Mangalore Institute of Technology & Engineering (MITE)
+            </p>
+
+            <p>
+                CGPA : <strong>9.36</strong>
+            </p>
+
+            <p>
+                Expected Graduation : 2028
+            </p>
 
         </div>
 
     </section>
 
-    <!-- Contact Section -->
+    <!-- ================= CONTACT ================= -->
 
     <section id="contact">
 
-        <h2>Contact Me</h2>
+        <h2 class="section-title">
+            Connect With Me
+        </h2>
 
-        <form>
+        <p class="contact-text">
 
-            <input
-                type="text"
-                placeholder="Your Name"
-                required>
+            Feel free to connect with me through GitHub or LinkedIn.
 
-            <input
-                type="email"
-                placeholder="Your Email"
-                required>
+        </p>
 
-            <textarea
-                rows="6"
-                placeholder="Your Message"
-                required>
-            </textarea>
+        <div class="contact-buttons">
 
-            <button type="submit">
-                Send Message
-            </button>
+            <a href="https://github.com/saheema919-svg"
+                target="_blank"
+                class="btn primary-btn">
 
-        </form>
+                <i class="fab fa-github"></i>
+
+                GitHub
+
+            </a>
+
+            <a href="https://linkedin.com/in/saheema-saheema-00431a3aa"
+                target="_blank"
+                class="btn secondary-btn">
+
+                <i class="fab fa-linkedin"></i>
+
+                LinkedIn
+
+            </a>
+
+        </div>
 
     </section>
 
-    <!-- Footer -->
+    <!-- ================= FOOTER ================= -->
 
     <footer>
 
         <p>
 
-            © 2026 Saheema.
-            All Rights Reserved.
+            © 2026 Saheema | Computer Science & Engineering Student
 
         </p>
 
