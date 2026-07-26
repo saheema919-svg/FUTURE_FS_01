@@ -62,8 +62,7 @@ Mangalore Institute of Technology & Engineering (MITE)
 - **LinkedIn:** https://linkedin.com/in/saheema-saheema-00431a3aa
 
 ## 📄 Live Website
-
-GitHub Pages link will be added after deployment.
+https://saheema919-svg.github.io/FUTURE_FS_01/
 
 ## © Author
 
