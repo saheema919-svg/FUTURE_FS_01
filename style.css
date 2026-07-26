@@ -257,5 +257,8 @@ footer{
 .nav-links li{
     margin:10px 0;
 }
-
+.nav-links a.active{
+    color:#38bdf8;
+    font-weight:bold;
+}
 }
